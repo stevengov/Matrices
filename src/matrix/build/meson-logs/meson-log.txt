@@ -1,0 +1,10 @@
+Build started at 2020-02-24T11:46:07.849364
+Main binary: /acsnfs3/software/python-3.6.2/bin/python3.6
+Python system: Linux
+The Meson build system
+Version: 0.51.2
+Source dir: /home/linux/ieng6/cs100wi20/sgov/Matrices/src/matrix
+Build dir: /home/linux/ieng6/cs100wi20/sgov/Matrices/src/matrix/build
+Build type: native build
+
+ERROR: First statement must be a call to project

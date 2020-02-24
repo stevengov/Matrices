@@ -1,0 +1,8 @@
+[
+  {
+    "directory": "/home/linux/ieng6/cs100wi20/sgov/Matrices/builddir",
+    "command": "c++ -Idemo@exe -I. -I.. -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -g -MD -MQ 'demo@exe/main.cpp.o' -MF 'demo@exe/main.cpp.o.d' -o 'demo@exe/main.cpp.o' -c ../main.cpp",
+    "file": "../main.cpp",
+    "output": "demo@exe/main.cpp.o"
+  }
+]
