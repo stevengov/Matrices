@@ -32,11 +32,11 @@ class Matrix {
      * Constructor to make Matrix
      * Parameter:
      */
-    
+
     Matrix( unsigned int rows, unsigned int cols, double m[][] ) {
       m_rows = rows;
       m_cols = cols;
-      
+
       // Copy m into m_values
 
     }
@@ -45,7 +45,7 @@ class Matrix {
     /**
      * Copy constructor? (Do I even need this)
      */
-    
+
 
     /**
      * Deconstructs object
@@ -55,18 +55,18 @@ class Matrix {
 
     // Getters of private members - rows, cols, values
     // SHOULD THESE METHODS BE CONSTANT 
-    unsigned int getRows() { return m_rows; }
+    unsigned int getRow() { return m_rows; }
 
-    unsigned int getCols() { return m_cols; } 
+    unsigned int getCol() { return m_cols; } 
 
     double[][] getValues() { return m_values; }
-    
-    // Setters of private members - rows, cols, values
-    void setRows( const unsigned int& r ) { rows = r; }
- 
-    void setCols( const unsigned int& c ) { cols = c; }
 
-    void setValues( const double[][]& v ) { values = v; }
+    // Setters of private members - rows, cols, values
+    void setRow( const unsigned int& r ) { m_rows = r; }
+
+    void setCol( const unsigned int& c ) { m_cols = c; }
+
+    void setValues( const double[][]& v ) { m_values = v; }
 
 
     /**
@@ -78,14 +78,38 @@ class Matrix {
           cout << m_values[i][j];
         }
         cout << endl;
+      }
     }
 
-  //============= operations ==========================================
+    //============= operations ==========================================
+
     /**
      * Multiplication of two matrices
      * Parameters: m - Second matrix to multiply
      */
-    Matrix operator * (Matrix const &m) {}
+    Matrix operator* ( Matrix const &m ) {  
+      Matrix ans( this->getRow(), m.getCol(), 0.0 );
+
+      double temp = 0.0;
+      if( this->getCol() == m.getRow() ) {
+        for( unsigned int i = 0; i < this->getRow(); i++ ) { 
+          for( unsigned int j = 0; j < m.getCol(); j++ ) {
+            temp = 0.0;
+            for( unsigned int k = 0; k < this->getCol(); k++ ) {
+              temp += this->m_values[i][k] * m[k, j];
+            }
+            ans[i,j] = temp;
+            cout << ans[i,j] << " ";
+          }
+          cout << endl;
+        }
+        return ans;
+
+      } else {
+        Matrix empty_matrix;
+        return empty_matrix;
+      }
+    }
 
     /**
      * Transposes a matrix
@@ -98,7 +122,7 @@ class Matrix {
 
       for( unsigned int i = 0; i < this->getCol(); i++ ) {
         for( unsigned int j = 0; j < this->getRow(); j++ ) {
-         // transposed_matrix(i,j) = (this->getValues())[j][i];
+          // transposed_matrix(i,j) = (this->getValues())[j][i];
         }
       }
       return transposed_matrix;
@@ -111,8 +135,16 @@ class Matrix {
  * 2. Create test files for these matrix files to test matrix build class
  * 3. Start multiplation and transpose stuff later
 
+ - override operator method matrix multiplication
+ - transpose method
 
 
-  - override operator method matrix multiplication
-  - transpose method
+
+ - need to fix test stuff
+ - need to fix matrix member of this class
+ - need to fix compile errors cause there's a lot of them 
+
+
+
+
  */

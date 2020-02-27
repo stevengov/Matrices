@@ -1,4 +1,4 @@
-Build started at 2020-02-24T11:54:43.491379
+Build started at 2020-02-26T20:53:41.883063
 Main binary: /acsnfs3/software/python-3.6.2/bin/python3.6
 Python system: Linux
 The Meson build system
@@ -6,16 +6,56 @@ Version: 0.51.2
 Source dir: /home/linux/ieng6/cs100wi20/sgov/Matrices
 Build dir: /home/linux/ieng6/cs100wi20/sgov/Matrices/build
 Build type: native build
-Project name: tutorial
+Project name: matrix
 Project version: undefined
+No CXXFLAGS in the environment, not changing global flags.
+No LDFLAGS in the environment, not changing global flags.
+No CPPFLAGS in the environment, not changing global flags.
+Sanity testing C++ compiler: c++
+Is cross compiler: False.
+Sanity check compiler command line: c++ -pipe -D_FILE_OFFSET_BITS=64 /home/linux/ieng6/cs100wi20/sgov/Matrices/build/meson-private/sanitycheckcpp.cc -o /home/linux/ieng6/cs100wi20/sgov/Matrices/build/meson-private/sanitycheckcpp.exe
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command: /home/linux/ieng6/cs100wi20/sgov/Matrices/build/meson-private/sanitycheckcpp.exe
+No CXXFLAGS in the environment, not changing global flags.
+No LDFLAGS in the environment, not changing global flags.
+No CPPFLAGS in the environment, not changing global flags.
+Sanity testing C++ compiler: c++
+Is cross compiler: False.
+Sanity check compiler command line: c++ -pipe -D_FILE_OFFSET_BITS=64 /home/linux/ieng6/cs100wi20/sgov/Matrices/build/meson-private/sanitycheckcpp.cc -o /home/linux/ieng6/cs100wi20/sgov/Matrices/build/meson-private/sanitycheckcpp.exe
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command: /home/linux/ieng6/cs100wi20/sgov/Matrices/build/meson-private/sanitycheckcpp.exe
 C++ compiler for the host machine: c++ (gcc 7.3.1 "c++ (GCC) 7.3.1 20180303 (Red Hat 7.3.1-5)")
 Build machine cpu family: x86_64
 Build machine cpu: x86_64
-Build targets in project: 1
+
+Executing subproject gtest method meson 
+
+Project name: gtest
+Project version: 1.8.1
+C++ compiler for the host machine: c++ (gcc 7.3.1 "c++ (GCC) 7.3.1 20180303 (Red Hat 7.3.1-5)")
+Run-time dependency threads found: YES 
+Dependency threads found: YES (cached)
+Dependency threads found: YES (cached)
+Dependency threads found: YES (cached)
+Build targets in project: 0
+Subproject gtest finished.
+
+Adding test "my Matrix test"
+Build targets in project: 2
 Found ninja-1.9.0.git.kitware.dyndep-1.jobserver-1 at /acsnfs3/software/python-3.6.2/bin/ninja
 Running compile:
-Working directory:  /tmp/tmpw8h4_re1
-Command line:  c++ /tmp/tmpw8h4_re1/testfile.cpp -o /tmp/tmpw8h4_re1/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -fpermissive --print-search-dirs 
+Working directory:  /tmp/tmpp65p8w99
+Command line:  c++ /tmp/tmpp65p8w99/testfile.cpp -o /tmp/tmpp65p8w99/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -fpermissive --print-search-dirs 
 
 Code:
  

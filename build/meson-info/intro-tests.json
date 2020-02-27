@@ -1,1 +1,1 @@
-[]
+[{"cmd": ["/home/linux/ieng6/cs100wi20/sgov/Matrices/build/test/matrix/test_Matrix.cpp.executable"], "env": {}, "name": "my Matrix test", "workdir": null, "timeout": 30, "suite": ["matrix"], "is_parallel": true}]
