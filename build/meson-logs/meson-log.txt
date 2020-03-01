@@ -1,4 +1,4 @@
-Build started at 2020-02-26T20:53:41.883063
+Build started at 2020-02-29T16:31:35.137050
 Main binary: /acsnfs3/software/python-3.6.2/bin/python3.6
 Python system: Linux
 The Meson build system
@@ -7,7 +7,7 @@ Source dir: /home/linux/ieng6/cs100wi20/sgov/Matrices
 Build dir: /home/linux/ieng6/cs100wi20/sgov/Matrices/build
 Build type: native build
 Project name: matrix
-Project version: undefined
+Project version: 0.0.1
 No CXXFLAGS in the environment, not changing global flags.
 No LDFLAGS in the environment, not changing global flags.
 No CPPFLAGS in the environment, not changing global flags.
@@ -54,8 +54,19 @@ Adding test "my Matrix test"
 Build targets in project: 2
 Found ninja-1.9.0.git.kitware.dyndep-1.jobserver-1 at /acsnfs3/software/python-3.6.2/bin/ninja
 Running compile:
-Working directory:  /tmp/tmpp65p8w99
-Command line:  c++ /tmp/tmpp65p8w99/testfile.cpp -o /tmp/tmpp65p8w99/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -fpermissive --print-search-dirs 
+Working directory:  /tmp/tmpaa8nfm0q
+Command line:  c++ /tmp/tmpaa8nfm0q/testfile.cpp -o /tmp/tmpaa8nfm0q/output.obj -pipe -D_FILE_OFFSET_BITS=64 -c -std=c++14 
+
+Code:
+ int i = static_cast<int>(0);
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler accepts -std=c++14: YES
+Running compile:
+Working directory:  /tmp/tmppkruu324
+Command line:  c++ /tmp/tmppkruu324/testfile.cpp -o /tmp/tmppkruu324/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -fpermissive --print-search-dirs 
 
 Code:
  
