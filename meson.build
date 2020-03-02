@@ -1,8 +1,3 @@
-# project( 'tutorial', 'cpp' )
-# executable( 'demo', 'main.cpp')
-#executable( 'demo', 'Matrix.hpp')
-
-
 project( 'matrix', 'cpp',
     version : '0.0.1',
     default_options : ['warning_level=3',
@@ -10,8 +5,6 @@ project( 'matrix', 'cpp',
                        'cpp_std=c++14'])
 
 subdir('src')
-
-
 
 # === test dependencies ===
 gtest_proj = subproject('gtest')

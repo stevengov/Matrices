@@ -1,4 +1,4 @@
-Build started at 2020-02-29T16:31:35.137050
+Build started at 2020-02-29T23:38:47.232030
 Main binary: /acsnfs3/software/python-3.6.2/bin/python3.6
 Python system: Linux
 The Meson build system
@@ -54,8 +54,8 @@ Adding test "my Matrix test"
 Build targets in project: 2
 Found ninja-1.9.0.git.kitware.dyndep-1.jobserver-1 at /acsnfs3/software/python-3.6.2/bin/ninja
 Running compile:
-Working directory:  /tmp/tmpaa8nfm0q
-Command line:  c++ /tmp/tmpaa8nfm0q/testfile.cpp -o /tmp/tmpaa8nfm0q/output.obj -pipe -D_FILE_OFFSET_BITS=64 -c -std=c++14 
+Working directory:  /tmp/tmpupoiwo05
+Command line:  c++ /tmp/tmpupoiwo05/testfile.cpp -o /tmp/tmpupoiwo05/output.obj -pipe -D_FILE_OFFSET_BITS=64 -c -std=c++14 
 
 Code:
  int i = static_cast<int>(0);
@@ -65,8 +65,8 @@ Compiler stderr:
  
 Compiler accepts -std=c++14: YES
 Running compile:
-Working directory:  /tmp/tmppkruu324
-Command line:  c++ /tmp/tmppkruu324/testfile.cpp -o /tmp/tmppkruu324/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -fpermissive --print-search-dirs 
+Working directory:  /tmp/tmpyzr0ryi_
+Command line:  c++ /tmp/tmpyzr0ryi_/testfile.cpp -o /tmp/tmpyzr0ryi_/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -fpermissive --print-search-dirs 
 
 Code:
  
